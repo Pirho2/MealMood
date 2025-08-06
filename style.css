@@ -1,22 +1,19 @@
-body, html {
-  height: 100%;
-  font-family: "Italianno", cursive;
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
   text-align: center;
-  padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  background-color: #FFF9EC;
 }
 .container {
   max-width: 600px;
   width: 100%;
-  background-color: white;
+  background-color: #FFF9EC;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 #powitanie {
+  margin-top: 100px;
     font-size: 250px;
     font-family: "Italianno", cursive;
     margin-left:center;
@@ -36,18 +33,14 @@ body, html {
       font-family: "Italianno", cursive;
       color: rgb(0, 0, 0);
       background: #FFF9EC;
-      padding: 20px;
-      display: inline-block;
-      border-radius: 10px;
+    
  }
   #date {
  font-size: 48px;
       font-family: "Italianno", cursive;
       color: rgb(0, 0, 0);
       background: #FFF9EC;
-      padding: 20px;
-      display: inline-block;
-      border-radius: 10px;
+   
  }
 h1{
     font-family: "Italianno", cursive;
@@ -182,4 +175,70 @@ h1{
 }
 #recipe-container a:hover {
   background-color: #d1462e;
+}
+#button {
+   margin-left: 0px;
+   position: fixed;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+#logo, #clock, #date {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body, html {
+    font-size: 14px; /* Adjust base font size for smaller screens */
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  #powitanie {
+    font-size: 100px;
+  }
+
+  #username {
+    margin-left: auto; /* Remove fixed margin */
+  }
+
+  #clock, #date {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .nastroj, select {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #output {
+    font-size: 24px;
+  }
+  #button {
+       position: static;
+       transform: translateX(0);
+       margin-left: auto;
+
+  }
+
+  #logo, #clock, #date {
+    margin-bottom: 10px; /* Add spacing between elements */
+  }
+}
+
+@media (max-width: 480px) {
+  #powitanie {
+    margin-top: 100px;
+    font-size: 60px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
 }
