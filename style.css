@@ -1,0 +1,244 @@
+body {
+  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  background-color: #FFF9EC;
+}
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #FFF9EC;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#powitanie {
+  margin-top: 100px;
+    font-size: 250px;
+    font-family: "Italianno", cursive;
+    margin-left:center;
+     display: inline-block
+}
+#heart{
+     display: block
+}
+#username{
+    margin-left:350px;
+}
+#logo {
+    display: inline-block;
+}
+ #clock {
+ font-size: 48px;
+      font-family: "Italianno", cursive;
+      color: rgb(0, 0, 0);
+      background: #FFF9EC;
+    
+ }
+  #date {
+ font-size: 48px;
+      font-family: "Italianno", cursive;
+      color: rgb(0, 0, 0);
+      background: #FFF9EC;
+   
+ }
+h1{
+    font-family: "Italianno", cursive;
+}
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+#button {
+   margin-left: 350px;
+  }
+ .nastroj {
+    display: flex;
+    justify-content: center; /* poziomo */
+    background-color: #FCB1A6;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nastroj:hover {
+    background-color: #FB6376;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .nastroj:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  select {
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: #FCB1A6;
+      color: black;
+      /* display: none; początkowo ukryty, ale sterujemy JS-em kontener moodBox */
+          padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    }
+
+    select:focus {
+      outline: none;
+      select:hover {
+    background-color: #FB6376;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .nastroj:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+    }
+    .styled-select {
+      position: relative;
+      width: 300px;
+    }
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      background-color: #FB6376;
+      border: 0px solid black;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+
+    select:focus {
+      outline: none;
+      box-shadow: 0 0 10px black;
+    }
+
+    .styled-select::after {
+      content: '▼';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      color: black;
+      font-size: 18px;
+      pointer-events: none;
+    }
+        #output {
+      font-size: 48px;
+      color: black;
+      text-shadow: 2px 2px 10px black;
+    }
+#recipe-container {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Arial', sans-serif;
+}
+#recipe-container a {
+  text-decoration: none;
+  background-color: #f05941;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+#recipe-container a:hover {
+  background-color: #d1462e;
+}
+#button {
+   margin-left: 0px;
+   position: fixed;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+#logo, #clock, #date {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body, html {
+    font-size: 14px; /* Adjust base font size for smaller screens */
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  #powitanie {
+    font-size: 100px;
+  }
+
+  #username {
+    margin-left: auto; /* Remove fixed margin */
+  }
+
+  #clock, #date {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .nastroj, select {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #output {
+    font-size: 24px;
+  }
+  #button {
+       position: static;
+       transform: translateX(0);
+       margin-left: auto;
+
+  }
+
+  #logo, #clock, #date {
+    margin-bottom: 10px; /* Add spacing between elements */
+  }
+}
+
+@media (max-width: 480px) {
+  #powitanie {
+    margin-top: 100px;
+    font-size: 60px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+}
